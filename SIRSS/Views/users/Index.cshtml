@@ -1,0 +1,39 @@
+﻿
+
+<div class="content">
+    <div class="container">
+
+        <div class="main-content">
+
+
+
+            @if (ViewBag.displayMenu == "Yes")
+            {
+                <h5>Welcome Admin.</h5>
+
+
+            }
+            else
+            {
+                <h2>  Welcome <strong>@ViewBag.Name</strong> :)  </h2>
+               
+            }
+
+        </div>
+
+        <aside id="sidebar">
+            <div class="widget sidemenu">
+                <ul>
+                   
+                    <li> <h3>@Html.ActionLink("Manage Role", "Index", "Role")</h3></li>
+                    <li>@Html.ActionLink("Register user", "Register","Account")</li>
+                    <li class="current">@Html.ActionLink("Manage Role", "Index", "Role")</li>
+                    <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+                    <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+                    <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+                    <li>@Html.ActionLink("Manage Role", "Index", "Role")</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</div>

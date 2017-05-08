@@ -1,0 +1,49 @@
+﻿@model SIRSS.Models.Level
+
+@{
+    ViewBag.Title = "Details";
+}
+<style>
+    th {
+        background-color: #008CC4;
+    }
+
+    table, th, td {
+        padding: 8px;
+        text-align: left;
+        text-align-last: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    h4 {
+        background-color: #008CC4;
+        font-size: 30px;
+        color: white;
+    }
+</style>
+
+<div class="content">
+    <div class="container">
+        <h2>Details</h2>
+
+        <div>
+            <h4>Level</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+</div>
+</div>

@@ -1,0 +1,62 @@
+﻿@model IEnumerable<SIRSS.Models.Level>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    th {
+        background-color: #008CC4;
+    }
+
+    table, th, td {
+        padding: 8px;
+        text-align: left;
+        text-align-last: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    h4 {
+        background-color: #008CC4;
+        font-size: 30px;
+        color: white;
+    }
+</style>
+
+
+
+
+<div class="content">
+    <div class="container">
+       
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <h4>Level</h4>
+        <table class="table">
+            
+            <tr>
+                <h5>
+                    @Html.DisplayNameFor(model => model.Name)
+                </h5>
+              
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        </div>
+</div>

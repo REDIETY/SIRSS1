@@ -1,0 +1,66 @@
+﻿@model SIRSS.ExamResult
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExamResult</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semister)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semister)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResultType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResultType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.SubjectCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.SubjectCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

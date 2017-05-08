@@ -1,0 +1,58 @@
+﻿@model SIRSS.Teacher
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Teacher</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisablityType.Disability)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisablityType.Disability)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject.SubjectCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject.SubjectCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
+    ViewBag.Title = "Add Role";
+}
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+
+    tr {
+        font-size: 20px;
+    }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+    h4 {
+        background-color: #008CC4;
+        font-size: 30px;
+        color: white;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        padding: 13px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        border-radius: 2px;
+    }
+</style>
+<div class="content">
+    <div class="container">
+
+        <div class="main-content">
+
+            <table>
+
+                <h4>Available User Roles</h4>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Name
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+
+        <aside id="sidebar">
+            <div class="widget sidemenu">
+                <div class="col-md-offset-2 col-md-10">
+                    <h3>  @Html.ActionLink(" Create New Role", "Create", "Role")</h3>
+                </div>
+            </div>
+        </aside>
+        <div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

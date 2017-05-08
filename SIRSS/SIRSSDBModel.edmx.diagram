@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="55a8e83adb284a1cbd80b10729faee01" Name="Diagram1">
+        <EntityTypeShape EntityType="SIRSSDBModel.Address" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Attendance" Width="1.5" PointX="11.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.ClassRoom" Width="1.5" PointX="1.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Comment" Width="1.5" PointX="8.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Conduct" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.ConductStatus" Width="1.5" PointX="0.75" PointY="25.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.DisablityType" Width="1.5" PointX="1.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Enrollment" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Event" Width="1.5" PointX="13" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.EventType" Width="1.5" PointX="10.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.ExamResult" Width="1.5" PointX="6" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.ExamSchedule" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.GradeLevel" Width="1.5" PointX="1.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Parent" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Report" Width="1.5" PointX="6" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.ResultType" Width="1.5" PointX="3.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.SectionType" Width="1.5" PointX="1.5" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Staff" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Student" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Subject" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.sysdiagram" Width="1.5" PointX="10.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.Teacher" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SIRSSDBModel.TimeTable" Width="1.5" PointX="8.25" PointY="14.375" IsExpanded="true" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Parents_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Teachers_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Attendances_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Attendances_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Attendances_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamSchedules_ClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Students_ClassRooms" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Comments_Parents" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Comments_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Conducts_ConductStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Conducts_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Students_DisablityTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Teachers_DisablityTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Enrollments_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Events_EventTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamResults_ResultTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamResults_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamSchedules_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamSchedules_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_ExamSchedules_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_GradeLevels_SectionTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Reports_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Staffs_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Students_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Subjects_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_TimeTables_GradeLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Parents_Students" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Reports_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Teachers_Staffs" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_Teachers_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_TimeTables_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="SIRSSDBModel.FK_TimeTables_Teachers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
